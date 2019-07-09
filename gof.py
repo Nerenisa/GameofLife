@@ -3,6 +3,6 @@
 
 
 import sys
-from terminal import *
+
 
 
