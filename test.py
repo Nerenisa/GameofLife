@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-
+import random
 from random import randrange as rnd, choice  
 import tkinter as tk
 #from tkinter.constants import *
@@ -16,13 +16,13 @@ m = 34 # размер ячеек
 d = 2 # размер поля вокруг ячейки
 nr = 6 # количество строк
 nc = 8 # количество столбцов
-x0 = m // 2 # отступ от левого края
-y0 = m // 2 # отступ от вернего края
+x0 = m // 3 # отступ от левого края
+y0 = m // 20 # отступ от вернего края
 colors = ['red','yellow','cyan','green']
   
 class cell():
     def __init__(self, r, c): # при создании указываем номер строки и столбца, в который помещаем
-        self.n = rnd(10) # значение, с которым будем работать
+        self.n = random.randint(0, 10) #[random.random() for _ in range(10)]  # значение, с которым будем работать
         self.r = r # Номер сторки в двумерном списке.
         self.c = c # Номер столбца ...
         self.color = choice(colors) # случайный цвет из списка
