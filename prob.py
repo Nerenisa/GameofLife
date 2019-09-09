@@ -23,7 +23,13 @@ for y in range(6): # 6 строк
     for d in range(10): # в каждой строке - 10 элементов
         b[y].append(random.randint(10, 100))
 
-for y in b:
-    print(y)
+#for y in b:
+    #print(y)
 
 
+
+n = int(input()) 
+ac = []
+for i in range(n):
+    ac.append([int(j) for j in input().split()])
+print(ac)
