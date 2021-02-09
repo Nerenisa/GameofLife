@@ -55,9 +55,4 @@ except:
 universe = Universe(width, height)
 universe.randomize()
 
-while True:
-    
-
-
-
-
+#while True
